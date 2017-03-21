@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .layout{
+            width: 600px;
+            height:600px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+        .layout .header{
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: green;
+        }
+        .layout .main{
+            display:flex;
+            background-color:blue;
+            flex:1;
+        }
+
+        .layout .aside{
+            width: 150px;
+            background-color:pink;
+        }
+
+        .layout .content{
+            background-color:deeppink;
+            flex:1;
+        }
+
+        .layout .footer{
+            height:60px;
+            line-height: 60px;
+            text-align:center;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>flex布局</header>
+        <div class="layout">
+            <div class="header">头部</div>
+            <div class="main">
+                <div class="aside">侧边栏</div>
+                <div class="content">主体内容</div>
+            </div>
+            <div class="footer">底部</div>
+        </div>
+    </section>
+</body>
+</html>
